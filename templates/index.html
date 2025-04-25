@@ -3,10 +3,12 @@
 <head>
     <title>Banterbird</title>
     <script src="/static/js/app.js" defer></script>
+    <link rel="stylesheet" href = "/static/css/style.css">
 </head>
 <body>
-    <h1>Banterbird</h1>
-    <div>
+    <img src="/templates/BanterBird.png" alt="Top Image" class="top-image">
+    <!-- h1 id = "title">Banterbird</h1 -->
+    <div id = "logged_in">
         Logged in as: <strong id="username">admin</strong>
     </div>
     <div>
@@ -15,7 +17,7 @@
         <button onclick="submitPost()">Tweet</button>
     </div>
     <hr>
-    <h3>Feed</h3>
+    <h3 id = "feed_title">Feed</h3>
     <div id="feed"></div>
 
     <template id="post-template">
