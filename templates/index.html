@@ -9,7 +9,7 @@
     <img src="/templates/BanterBird.png" alt="Top Image" class="top-image">
     <!-- h1 id = "title">Banterbird</h1 -->
     <div id = "logged_in">
-        Logged in as: <strong id="username">admin</strong>
+        Logged in as: <strong id="username">anonymous</strong>
     </div>
     <div>
         <h3>New Post</h3>
@@ -27,5 +27,8 @@
             <hr>
         </div>
     </template>
+    <script>
+        document.getElementById("username").innerText = localStorage.getItem("username");
+    </script>
 </body>
 </html>
